@@ -1,0 +1,32 @@
+[
+  {
+    "remote"     : "github",
+    "repository" : "spring4ever/android_vendor_xiaomi_spring",
+    "target_path": "vendor/xiaomi/spring",
+    "branch"     : "lineage-24.0"
+  },
+  {
+    "remote"     : "github",
+    "repository" : "spring4ever/android_device_xiaomi_spring-kernel",
+    "target_path": "device/xiaomi/spring-kernel",
+    "branch"     : "lineage-24.0"
+  },
+  {
+    "remote"     : "github",
+    "repository" : "LineageOS/android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "branch"     : "lineage-24.0"
+  },
+  {
+    "remote"     : "github",
+    "repository" : "swiitch-OFF-Lab/hardware_dolby",
+    "target_path": "hardware/dolby",
+    "branch"     : "sony-A17"
+  },
+  {
+    "remote"     : "github",
+    "repository" : "swiitch-OFF-Lab/packages_apps_DolbyUI",
+    "target_path": "packages/apps/DolbyUI",
+    "branch"     : "16.0"
+  }
+]
