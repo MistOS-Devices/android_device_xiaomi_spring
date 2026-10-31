@@ -94,6 +94,11 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('.*media_codecs_(google_audio|google_telephony|vendor_audio|google_c2|dolby_audio).*\n', ''),
     'vendor/lib64/libcameraopt.so': blob_fixup()
         .add_needed('libprocessgroup_shim.so'),
+    'vendor/lib64/camera/components/com.mi.node.tsskinbeautifier.so': blob_fixup()
+        .sig_replace('00 20 80 52 f6 17 00 f9 ff 7f 04 a9 b2 10 00 94', '00 a6 81 52 f6 17 00 f9 ff 7f 04 a9 b2 10 00 94')
+        .sig_replace('00 20 80 52 a0 10 00 94 a3 12 44 29 e1 03 18 aa', '00 a6 81 52 a0 10 00 94 a3 12 44 29 e1 03 18 aa'),
+    'vendor/lib64/com.xiaomi.plugin.mibokeh.so': blob_fixup()
+        .sig_replace('e8 03 40 f9 48 04 00 b4 89 00 00 90 29 1d 42 f9', 'e8 03 40 f9 08 04 00 b4 89 00 00 90 29 1d 42 f9'),
     'vendor/etc/vintf/manifest/c2_manifest_vendor_spring.xml': blob_fixup()
         .regex_replace('.+DOLBY.+\n', ''),
     ('vendor/lib64/libqcrilNr.so', 'vendor/lib64/libril-db.so'): blob_fixup()
