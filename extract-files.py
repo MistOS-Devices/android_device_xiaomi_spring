@@ -99,6 +99,9 @@ blob_fixups: blob_fixups_user_type = {
         .sig_replace('00 20 80 52 a0 10 00 94 a3 12 44 29 e1 03 18 aa', '00 a6 81 52 a0 10 00 94 a3 12 44 29 e1 03 18 aa'),
     'vendor/lib64/com.xiaomi.plugin.mibokeh.so': blob_fixup()
         .sig_replace('e8 03 40 f9 48 04 00 b4 89 00 00 90 29 1d 42 f9', 'e8 03 40 f9 08 04 00 b4 89 00 00 90 29 1d 42 f9'),
+    'vendor/lib64/hw/com.qti.chi.override.so': blob_fixup()
+        .sig_replace('fd 7b c6 a8 c0 03 5f d6 99 08 00 b0 39 3f 46 f9 31 03 40 b9 3f 06 00 71 61 02 00 54 f4 ee ff d0 94 62 24 91 22 09 80 52 e1 05 80 52 e0 03 14 aa 7a 15 04 94 1f 00 00 f1 a1 f1 ff b0 21 e8 18 91 83 06 80 9a 42 f0 ff 90', 'fd 7b c6 a8 c0 03 5f d6 88 32 58 f9 c8 00 00 b5 20 f0 ff d0 00 70 23 91 81 ef ff f0 21 28 2d 91 fa 19 04 94 f4 4f 45 a9 f6 57 44 a9 f8 5f 43 a9 fa 67 42 a9 fc 6f 41 a9 fd 7b c6 a8 c0 03 5f d6 83 06 80 9a 42 f0 ff 90')
+        .sig_replace('2a 03 40 39 0a 01 18 37 f4 4f 45 a9 f6 57 44 a9 f8 5f 43 a9', '2a 03 40 39 0a 01 18 37 07 00 00 14 f6 57 44 a9 f8 5f 43 a9'),
     'vendor/etc/vintf/manifest/c2_manifest_vendor_spring.xml': blob_fixup()
         .regex_replace('.+DOLBY.+\n', ''),
     ('vendor/lib64/libqcrilNr.so', 'vendor/lib64/libril-db.so'): blob_fixup()
